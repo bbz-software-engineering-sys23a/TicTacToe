@@ -19,12 +19,12 @@
 - Scoreboard
 - Revanche Option
 
-## Simpler Usecase
+## Usecase
 
-1. Spiel startet sofort &rarr; Feld wird direkt angezeigt
-2. Spieler `X` wählt `1-9` als erste Eingabe
-3. 
+![simpleUsecase](/pictures/simpleUsecase.png)
 
+> [!NOTE]
+> Dies ist nur ein simpler Usecase ohne Zusatzfeatures und Errorhandling
 
 
 ## Dokumentation
