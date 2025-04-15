@@ -6,6 +6,40 @@
 
 using namespace std;
 
+//Enum für Spielstatus
+enum class Spielstatus {Laufend, Gewonnen, Unentschieden};
+
+class Spielbrett {
+private:
+    char Feld[3][3];
+
+public:
+    Spielbrett() {Reset();}
+
+    void Reset() {
+        for (int i = 0; i < 3; ++i)
+            for (int j = 0; j < 3; ++j)
+                Feld[i][j] = ' ';
+    }//endoffunction
+
+    void Anzeigen() {
+
+    }//endoffunction
+
+    bool ZugSpielen(int Nummer, char Symbol) {
+
+    }//endoffunction
+};//endofclass
+
+class Spieler {
+protected: 
+    char Symbol;
+public: 
+};//endofclass
+
+
+
+
 int main()
 {
     std::cout << "Hello World!\n";
