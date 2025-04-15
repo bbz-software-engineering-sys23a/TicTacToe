@@ -1,6 +1,13 @@
 # Prerequisites
 *.d
 
+#Visual C++ Cache Files
+*.suo
+*.db
+*.db-shm
+*.db-wal
+*.opendb
+
 # Compiled Object files
 *.slo
 *.lo
