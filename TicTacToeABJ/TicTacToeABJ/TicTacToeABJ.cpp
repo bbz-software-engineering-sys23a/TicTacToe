@@ -169,6 +169,14 @@ class Gewinnerkennung {
 
         }
 
+        bool getXGewinnt() {
+            return xGewinnt;
+        }
+
+        bool getOGewinnt() {
+            return oGewinnt;
+        }
+
 
 };//endofclass
 
