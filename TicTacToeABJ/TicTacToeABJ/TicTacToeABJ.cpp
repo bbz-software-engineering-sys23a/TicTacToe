@@ -6,7 +6,7 @@
 using namespace std;
 
 // Enum für den Spielstatus
-enum class Spielstatus {Laufend, VictoryX, VictoryO, Untentschieden};
+enum class Spielstatus {laufend, victoryX, victoryO, untentschieden};
 
 class Spieler {
     string name; //Name von Spieler 1 und 2
@@ -18,10 +18,38 @@ char feld[3][3]; //Spielfeld initialisieren
 void anzeigen() {
 }//endoffunction
 
- void spielen() {
-    //einlesen von eingabe für jeweiligen Spieler
-}
-    
+bool spielen(int eingabe, char symbol) {
+    //einlesen von Eingabe und überprüft ob Feld frei oder besetzt, Rückgabewert true--> Spielzug korrekt, false--> falsche Eingabe oder Feld bereits besetzt
+    if (eingabe < 1 || eingabe > 9) return false; //Eingabe nicht korrekt
+    int zeile;
+    zeile = (eingabe - 1) / 3; //Berechnung Zeile
+    int spalte;
+    spalte = (eingabe - 1) % 3; //Berechnung Spalte
+    if (feld[eingabe][spalte] == ' ') {
+        feld[eingabe][spalte] = symbol;
+        return true; //Spielzug erfolgreich
+    }
+    return false; //Feld nicht frei
+}//endoffunction
+/*
+* Erklärung der Funktion Rechenweg:
+* Tik Tac Toe Spielfeld
+* 1     2       3
+* 4     5       6
+* 7     8       9
+* Dementsprechedes 2D Array
+* feld[0][0] feld[0][1] feld[0][2]
+* feld[1][0] feld[1][1] feld[1][2]
+* feld[2][0] feld[2][1] feld[2][2]
+* 
+* Eingabe 7
+* Zeile: (7-1)/3 = 2
+* Spalte: (7-1)%3 = 0
+* 
+* Eingabe 5
+* Zeile: (5-1)/3 = 1
+* Spalte: (5-1)%3 = 1
+*/
 
 void reset() {
     for (int i = 0; i < 3; ++i)
