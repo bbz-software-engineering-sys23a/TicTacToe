@@ -25,8 +25,8 @@ bool spielen(int eingabe, char symbol) {
     zeile = (eingabe - 1) / 3; //Berechnung Zeile
     int spalte;
     spalte = (eingabe - 1) % 3; //Berechnung Spalte
-    if (feld[eingabe][spalte] == ' ') {
-        feld[eingabe][spalte] = symbol;
+    if (feld[zeile][spalte] == ' ') {
+        feld[zeile][spalte] = symbol;
         return true; //Spielzug erfolgreich
     }
     return false; //Feld nicht frei
@@ -51,6 +51,7 @@ bool spielen(int eingabe, char symbol) {
 * Spalte: (5-1)%3 = 1
 */
 
+//Setzt das 2d Array zurück alles leer sprich ' '
 void reset() {
     for (int i = 0; i < 3; ++i)
         for (int j = 0; j < 3; ++j)
