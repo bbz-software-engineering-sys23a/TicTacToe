@@ -2,8 +2,11 @@
 #include <vector>
 #include <string>
 #include <limits>
+#include <stdio.h>
 
 using namespace std;
+
+char feld[3][3]; //Spielfeld initialisieren
 
 // Enum für den Spielstatus
 enum class Spielstatus {Laufend, VictoryX, VictoryO, Untentschieden};
@@ -14,8 +17,34 @@ class Spieler {
 
 };//endofclass
 
-char feld[3][3]; //Spielfeld initialisieren
-void anzeigen() {
+
+int anzeigen(int size) {
+
+    if (size < 2) {
+        return 1;
+    }
+
+    int lineSize = (size - 1) * 4;
+    string lineLengthAdd(lineSize, '-');
+    string lineLength = "-----" + lineLengthAdd + "\n";
+
+    for (int i = 0; i < size; i++) {
+        if (i == 0) {
+            printf("%s", lineLength.c_str());
+        }
+
+        for (int j = 0; j < size; j++) {
+            if (j == 0) {
+                printf("|");
+            }
+
+            printf(" %c |", feld[i][j]);
+        }
+
+        printf("\n%s", lineLength.c_str());
+    }
+
+    return 0;
 }//endoffunction
 
  void spielen() {
