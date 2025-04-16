@@ -158,6 +158,22 @@ public:
         return oGewinnt;
     }
 
+char name_benutzer_1[50];
+char name_benutzer_2[50];
+char symbol_benutzer_1= 'X';
+char symbol_benutzer_2= 'o';
+
+
+
+
+    printf("Willkommen zu Tic Tac Toe \n") ;
+    printf( " \n Bitte geben Sie Ihre Namen an  \n Name Benutzer 1 : ");
+    scanf("%s", name_benutzer_1);
+    printf( "\n Name Benutzer 2 : ");
+    scanf("%s", name_benutzer_2);
+    printf("\nSpieler 1: %s spielt mit '%c'\n", name_benutzer_1, symbol_benutzer_1);
+    printf("Spieler 2: %s spielt mit '%c'\n", name_benutzer_2, symbol_benutzer_2);
+
 
 };//endofclass
 
