@@ -82,3 +82,6 @@
     - Wird die Revanche angenommen, startet das Spiel von vorn
     - Wird die Revanche abgelehnt, wird das Programm beendet
 
+    ### Sequenzdiagramm
+    ![sequenzdiagramm](/pictures/sequenzdiagramm.png)
+
