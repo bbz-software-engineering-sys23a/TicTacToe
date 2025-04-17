@@ -85,3 +85,7 @@
 ### Sequenzdiagramm
 ![sequenzdiagramm](/pictures/sequenzdiagramm.png)
 
+### Struktogramm
+![struktogramm](/pictures/struktogramm.png)
+
+
