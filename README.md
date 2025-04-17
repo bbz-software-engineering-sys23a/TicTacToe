@@ -1,5 +1,8 @@
 # TicTacToe
 
+## Beschreibung
+Tic Tac Toe ist ein Spiel für zwei Personen, bei dem man abwechselnd X oder O auf ein 3x3-Feld setzt, um drei in einer Reihe zu bekommen.
+
 ## Mitwirkende
 
 - [Joel Frei](https://github.com/joel724)
@@ -33,10 +36,10 @@
 
 
 
-## Spielanleitung 
+### Spielanleitung 
 
 
-### Spielregeln
+#### Spielregeln
 
 1. **Abwechselndes Setzen**
 
@@ -54,7 +57,7 @@
        hat, endet das Spiel unentschieden.
 
 
-### Spielablauf
+#### Spielablauf
 
 **1. Benutzerregistrierung**
 
